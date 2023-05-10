@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                display: grid;
+                font-size: 16px;
+                grid-template-areas: 
+                    'header header header'
+                    'nav main sidebar'
+                    'footer footer footer';
+                grid-template-columns: 1fr 4fr 1fr;
+                grid-template-rows: 1fr 10fr 1fr;
+            }
+
+            header, nav, content, footer, aside {
+                background-color: steelblue;
+                border: 2px #ccc solid;
+                color: #ccc;
+            }
+
+            header {
+                grid-area: header;
+            }
+            nav {
+                grid-area: nav;
+            }
+            content {
+                grid-area: main;
+            }
+            footer {
+                grid-area: footer;
+            }
+            aside {
+                grid-area: sidebar;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>Header</header>
+        <nav>Nav</nav>
+        <content>Content</content>
+        <footer>footer</footer>
+        <aside>aside</aside>
+    </body>
+</html>
